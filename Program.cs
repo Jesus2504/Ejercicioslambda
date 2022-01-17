@@ -37,10 +37,16 @@ namespace Ejercicioslambda
 
             //4. Muestre por pantalla los datos del estudiante mas joven
 
-            var edad1 = details.OrderBy(x => x).First( );
-
-                Console.WriteLine(string.Join("\n ", edad1.Nombre));
             
+            var edad1 = details.OrderBy(x => x.Edad).First();
+            Console.WriteLine($"Nombre: {edad1.Nombre} Apellidos: {edad1.Apellido}");
+            
+
+          
+
+
+
+
 
             List<int> list = new List<int> { 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6 };
             //Dado la siguiente coleccion de datos, utilizando expresiones Lambda:
